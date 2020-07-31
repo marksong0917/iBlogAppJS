@@ -23,6 +23,9 @@ const BlogSchema = new mongoose.Schema(
   },
   {
     timestamps: true,
+    toJSON: {
+      getters: true,
+    },
   }
 );
 
